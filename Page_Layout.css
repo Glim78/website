@@ -1,0 +1,29 @@
+/* Title:Page_Layout: Codi Jones
+School/Term: SIUC, Fall 2021
+Developed:9/10/2021 */
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 725px
+}
+h {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+p {
+    padding-left: 10px;
+    padding-right: 5px
+}
+li{
+    padding-left: 10px;
+}
+image
+/*this should make it so only this will affect the bike image*/
+ {
+    border: 4px solid darkblue;
+    position: static
+}
