@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Title:Homepage Author: Codi Jones
+School/Term: SIUC, Fall 2021
+Developed:8/29/2021 -->
+<html lang="en-US">
+<head>
+        <link rel="stylesheet" type="text/css" href="Page_Layout.css"> 
+        <link rel="stylesheet" type="text/css" href="slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta charset="utf-8">
+        <meta keyword="HTML">
+        <meta author= "Codi Jones">
+        <title>Contact Page</title>
+</head>
+<body>
+        <ul>
+                <li><a href="Index.htm">Home</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+        </ul>
+        <!-- This creates a simple way to go to our different pages-->
+        <h1>Contact Us</h1>
+        <form id="contactus" action="response.htm" method="post">
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" required  minlength="15" maxlength="25" autofocus><br>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" required minlength="15" maxlength="50"><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" required minlength="4" maxlength="25"><br>
+        <!--Using text fields for these 3 fields-->
+
+        State:<br>
+        <select id="style_and_size" required>
+        <option value="illinois">Illinois</option>
+        <option value="wisconsin">Wisconsin</option>
+        <option value="missouri">Missouri </option>
+        <option value="kentucky">Kentucky</option>
+        <option value="iowa">Iowa</option>
+        <option value="indiana">Indiana</option>
+        </select><br>
+        <!--drop down for picking a state-->
+
+        <label for="zipcode">Zip code:</label>
+        <input type="text" id="zipcode" required 
+        pattern="\d{5}([\-]\d{4})?" 
+        title="Must be 999999 or 99999-9999"><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone"
+        required
+        minlength="10" maxlength="12"
+        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+        title="Must be 999-999-9999"><br>
+        
+        <label  for="email">Email:</label>
+        <input type="email" id="email"
+        minlength="10" maxlength="25"
+        required><br>
+
+        Date:&nbsp;&nbsp;
+             <input type="date" id="date" required><br>
+
+             <fieldset>
+             <legend>Inquiry</legend>
+             <input type="checkbox" name="inquiry1" value="sales" required>
+             <label for="inquiry1">Sales</label><br>
+             <input type="checkbox" name="inquiry2" value="services" required >
+             <label for="inquiry2">Services</label><br>
+             <input type="checkbox" name="inquiry3" value="rentals" required >
+             <label for="inquiry3">Rentals</label>
+              </fieldset><br> 
+            
+        
+              <fieldset >
+               <legend>Bicycle Type</legend>
+             <input type="radio" name="kona" id="bike1" value="kona process x cr" required > 
+             <label for="bike1">Kona Process X CR</label><br>
+             <input type="radio" name="dawas" id="bike2" value="dawas classic"  required>
+             <label for="bike1">Dawas Classic</label><br>
+             <input type="radio" name="felt" id="bike3" value="felt bree gravel" required>
+             <label for="bike1">Felt Breed Gravel</label><br>
+             <input type="radio" name="woom" id="bike1" value="woom kids" requiredS>
+             <label for="bike1">Woom Bike</label>
+             </fieldset ><br>
+             
+
+        Password:<input type="password" id="password" 
+              placeholder="Enter your password" required><br><br>
+        
+        Message:<br>
+        <textarea id="messages"
+        placeholder="Let us know we can do for you." required minlength="20" maxlength="200" >
+        </textarea><br>
+
+        <input type="submit" name="sumbmit" value="Submit">
+</form>
+
+        
+         
+
+
+</body>
+</html>
